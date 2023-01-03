@@ -19,7 +19,7 @@ public class TransformBenchmark : MonoBehaviour {
             action();
         }
         sw.Stop();
-        UnityEngine.Debug.Log($"{sw.Elapsed.Milliseconds} Milliseconds has passed on Benchmark: {action.Method.Name}");
+        UnityEngine.Debug.Log($"{sw.Elapsed.TotalMilliseconds} Milliseconds has passed on Benchmark: {action.Method.Name}");
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
